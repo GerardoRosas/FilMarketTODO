@@ -1,4 +1,125 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  padding: 10px;
   font-family: sans-serif;
+  background: rgb(44,0,85);
+  background: linear-gradient(180deg, rgba(44,0,85,1) 63%, rgba(196,0,255,1) 97%);
+  height: 100vh;
+}
+
+/* Header Styles */
+.containerHeader{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.titulo{
+  font-size: 20px;
+  font-weight: bold;
+  color: beige;
+  margin-left: 2rem;
+}
+
+.loginTag{
+  background-color: #ec10c2;
+  height: 3rem;
+  width: 8rem;
+  text-decoration-style: none;
+  padding: .5rem 0;
+  font-size: 25px;
+  text-decoration: none;
+  margin-right: 2rem;
+  color: white;
+  text-align: center;
+  border-radius: 20px 20px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.loginTag:hover{
+
+}
+
+
+/* Login */
+.containerLogin{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  height: 380px;
+  width: 400px;
+  padding: 0 1rem;
+  background-color: beige;
+  border-radius: 25px 25px;
+}
+
+.loginSubmit{
+  width: 100%;
+  background-color: #ec10c2;
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.line{
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  margin: 20px 16px;
+  text-align: center;
+}
+
+.newAccount{
+  background-color: #42b72a;
+  font-size: 15px;
+  padding: .5rem 15px;
+  width: 60%;
+  align-self: center;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+
+/* Task Handler */
+.taskHanlderContainer{
+  height: auto;
+  width: 80%;
+  background-color: thistle;
+  padding: 5rem;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+
+/* New Task */
+.newTaskForm{
+  width: ;
 }
