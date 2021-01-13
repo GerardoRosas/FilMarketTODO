@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Task from './Task';
 import NewTask from './NewTask';
 import {useTracker} from 'meteor/react-meteor-data';
@@ -9,23 +9,22 @@ import { Grid } from '@material-ui/core';
 const TaskHandler = () => {
 
     const tasks = useTracker(() => TasksCollection.find({}).fetch());
-    
 
-    // const tasks = [
-    //     {_id: 1, text: 'First task'},
-    //     {_id: 2, text: 'Second task'},
-    //     {_id: 3, text: 'Third task'}
-    // ]
+    const [ deletetask, handleDeleteTask ] = useState(false);
+    
 
     return ( 
         <Grid container direction="column" className="taskHanlderContainer">
             <Grid item>
-                <h3>Welcome to your dashboard</h3>
+                <h3 className="welcome">Welcome to your dashboard</h3>
             </Grid>
+
             <NewTask />
 
-            <ul>
-                {tasks.map(task => <Task key={task.id} task={task}/>)}
+            <ul className="ulList">
+                {tasks.map(task => 
+                    <Task key={task._id} task={task}/>
+                )}
             </ul>
         </Grid>
     );

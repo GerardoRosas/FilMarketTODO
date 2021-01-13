@@ -44,11 +44,6 @@ body {
   font-weight: 700;
 }
 
-.loginTag:hover{
-
-}
-
-
 /* Login */
 .containerLogin{
   display: flex;
@@ -113,13 +108,59 @@ body {
   width: 80%;
   background-color: thistle;
   padding: 5rem;
-  justify-content: center;
   margin: 0 auto;
+  align-items: center;
+}
 
+.welcome{
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
 }
 
 
+
+
 /* New Task */
-.newTaskForm{
-  width: ;
+
+
+.error{
+  color: red;
+  font-weight: 800;
+  background-color: #FA8E8E;
+  width: 300px;
+  border: 2px;
+  border-style: solid;
+}
+
+.ulList{
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+ul { 
+  list-style-type: "👍🏻";
+  cursor: crosshair;
+}
+
+.taskItem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.6rem 0.4rem;
+}
+
+.xItem{
+  color: red;
+  font-size: large;
+
+}
+
+.xItem:hover{
+  cursor: pointer;
+
+}
+
+.checkTask{
+  text-decoration: line-through;
 }
