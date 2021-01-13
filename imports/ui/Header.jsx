@@ -23,7 +23,8 @@ export const Header = () => {
             {(location.pathname === '/login' || location.pathname === '/todo-list' || location.pathname === '/new-account') ? null : ( 
                 <Link to={'/login'} className="loginTag">
                     Login
-                </Link>)}
+                </Link>)
+            }
         </Grid>
      );
 }

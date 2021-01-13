@@ -16,7 +16,7 @@ const TaskHandler = () => {
     return ( 
         <Grid container direction="column" className="taskHanlderContainer">
             <Grid item>
-                <h3 className="welcome">Welcome to your dashboard</h3>
+                <h3 className="welcome">Welcome to your To-Do List 📝 </h3>
             </Grid>
 
             <NewTask />

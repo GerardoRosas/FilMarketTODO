@@ -44,6 +44,7 @@ const NewTaks = () => {
             completed: false
         })
 
+        //Reiniciamos el input
         setTask('');
 
     }

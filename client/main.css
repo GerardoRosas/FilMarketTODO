@@ -117,19 +117,26 @@ body {
   color: white;
 }
 
-
-
-
 /* New Task */
 
 
 .error{
   color: red;
   font-weight: 800;
-  background-color: #FA8E8E;
+  background-color: #FABABA;
   width: 300px;
   border: 2px;
   border-style: solid;
+}
+
+.error2{
+  color: red;
+  font-weight: 800;
+  background-color: #FABABA;
+  width: 100%;
+  border: 2px;
+  border-style: solid;
+  text-align: center;
 }
 
 .ulList{
