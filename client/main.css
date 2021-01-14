@@ -26,6 +26,16 @@ body {
   font-weight: bold;
   color: beige;
   margin-left: 2rem;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout{
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .loginTag{
@@ -127,6 +137,8 @@ body {
   width: 300px;
   border: 2px;
   border-style: solid;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .error2{
@@ -137,6 +149,7 @@ body {
   border: 2px;
   border-style: solid;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .ulList{
@@ -170,4 +183,12 @@ ul {
 
 .checkTask{
   text-decoration: line-through;
+}
+
+.bye{
+  cursor: pointer;
+}
+
+.bye:hover{
+  color:rgba(196,0,255,1);
 }

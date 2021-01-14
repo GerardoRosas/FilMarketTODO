@@ -11,12 +11,15 @@ const TaskHandler = () => {
     const tasks = useTracker(() => TasksCollection.find({}).fetch());
 
     const [ deletetask, handleDeleteTask ] = useState(false);
+
+    const userName = localStorage.getItem('userName');
+    console.log(userName);
     
 
     return ( 
         <Grid container direction="column" className="taskHanlderContainer">
             <Grid item>
-                <h3 className="welcome">Welcome to your To-Do List 📝 </h3>
+                <h3 className="welcome">Welcome {userName} to your To-Do List 📝 </h3>
             </Grid>
 
             <NewTask />

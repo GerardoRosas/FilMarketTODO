@@ -31,12 +31,11 @@ const NewTaks = () => {
 
         if(!task){
             setError(true);
+            setTimeout(() => {
+                setError(false)
+            }, 3000 )
             return
         }
-
-        setTimeout(() => {
-            setError(false)
-        }, 3000 )
 
         TasksCollection.insert({
             text: task.trim(),
@@ -54,7 +53,7 @@ const NewTaks = () => {
         <form className="newTaskForm" onSubmit={onSubmit}>
             {error ? (
                 <div className="error">
-                    <p>Debes agregar una tarea</p>
+                    <p>Ups! 👀 You need to add a task</p>
                 </div>
             ): null}
             <TextField variant="outlined" label="New Task" value={task} name="task" onChange={onChange}/>
